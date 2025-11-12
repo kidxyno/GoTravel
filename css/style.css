@@ -1,0 +1,123 @@
+/* ================= Global Fonts & Body ================= */
+body {
+  font-family: 'Poppins', cascadia-code;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================= Page Backgrounds (Gradient) ================= */
+body.login {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+body.home {
+  background: linear-gradient(to bottom right, #ff9966, #ff5e62);
+}
+
+body.gallery {
+  background: linear-gradient(to right, #43cea2, #185a9d);
+}
+
+body.booking {
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+}
+
+/* ================= Content Box ================= */
+.ui-content {
+  background: rgba(255,255,255,0.15);
+  padding: 25px;
+  border-radius: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* ================= Headings ================= */
+h1, h3 {
+  font-weight: 600;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+/* ================= Input & Select Fields ================= */
+input, select {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* Focus effect */
+input:focus, select:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255,255,255,0.7);
+}
+
+/* ================= Buttons ================= */
+.ui-btn {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 15px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0);
+  transition: all 0.3s ease;
+}
+
+/* Colored buttons */
+.ui-btn-b {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: #fff;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.ui-btn-b:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.ui-btn-a {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.ui-btn-a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* ================= Bootstrap Carousel ================= */
+.carousel-item img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.carousel-caption {
+  background: rgba(0,0,0,0.4);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* ================= Links ================= */
+a {
+  text-decoration: none;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 500px) {
+  .ui-content {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .carousel-item img {
+    height: 200px;
+  }
+}
