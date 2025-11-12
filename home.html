@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GoTravel - Home</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+<body class="home">
+<div data-role="page" id="homePage">
+
+  <div data-role="header">
+    <h1>Welcome to GoTravel!</h1>
+  </div>
+
+  <div role="main" class="ui-content">
+    <h3>Your future destinations await!</h3>
+    <p>Explore destinations and book your next trip.</p>
+
+    <a href="gallery.html" class="ui-btn ui-btn-b ui-corner-all" data-transition="slide">View Gallery</a>
+    <a href="booking.html" class="ui-btn ui-btn-b ui-corner-all" data-transition="slide">Book a Trip</a>
+    <!-- Logout button triggers popup -->
+    <a href="#logoutPopup" data-rel="popup" class="ui-btn ui-btn-a ui-corner-all ui-btn-inline">Logout</a>
+
+    <!-- ================= Logout Confirmation Popup ================= -->
+    <div data-role="popup" id="logoutPopup" data-theme="a" class="ui-content" style="min-width:250px;">
+      <h4>Confirm Logout</h4>
+      <p>Are you sure you want to logout?</p>
+      <a href="#" id="confirmLogout" class="ui-btn ui-corner-all ui-btn-b">Yes, Logout</a>
+      <a href="#" class="ui-btn ui-corner-all ui-btn-a" data-rel="back">Cancel</a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
